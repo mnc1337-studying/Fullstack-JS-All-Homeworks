@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-div > h1 {
+    color: #ff0000;
+}
+
+.main-div > p {
+    color: darkred;
+}
+
+ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <code>Застосовується до тега code, вага 1; у CSS: (0, 0, 1)</code>
+
+    <div class="text-box">Застосовується до класу text-box, вага 10; у CSS: (0, 1, 0)</div>
+
+    <h1 id="main-title">Застосовується до ідентифікатора main-title, вага 100; у CSS: (1, 0, 0)</h1>
+
+    <div data-status="active">Застосовується до атрибута [data-status="active"], вага 10; у CSS: (0, 1, 0)</div>
+
+    <div>
+        <p>Застосовується до тегів p, вкладених в div, на будь-якому рівні, вага 2; у CSS: (0, 0, 2)</p>
+    </div>
+
+    <ul>
+        <li>Застосовується до тегів li, вкладених в ul, на першому рівні, вага 2; у CSS: (0, 0, 2)</li>
+    </ul>
+
+    <div><em>Блок-орієнтир для селектора "+"</em></div>
+    <p>Застосовується до тегу p, який є першим безпосереднім сусідом div, вага 2; у CSS: (0, 0, 2)</p>
+
+    <div><em>Блок-орієнтир для селектора "~"</em></div>
+    <h2>Застосовується до тегів h2, які є наступними сусідами p на тому самому рівні, вага 2; у CSS: (0, 0, 2)</h2>
+
+    <h3 class="sub-title">Застосовується до тега h3 з класом sub-title, вага 11; у CSS: (0, 1, 1)</h3>
+
+    <div class="wrapper-div">
+        <button id="submit-btn">Застосовується до тега button з ідентифікатором submit-btn, вкладеного в div з класом wrapper-div, вага 111; у CSS: (1, 1, 1)</button>
+    </div>
+
+</body>
+
+</html>
