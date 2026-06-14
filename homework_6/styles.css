@@ -3,43 +3,73 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    background: #ffffff;
 }
 
 .mondrian-table {
-    width: 514px;
-    height: 514px;
+    margin: 100px 0;
+    width: 500px;
+    height: 500px;
     border-collapse: collapse;
-    border: 1px solid #020202;
-    background-color: #020202;
+    background: #000000;
 }
 
 .mondrian-table td {
-    border: 7px solid #020202;
+    border: 7px solid #000000;
     padding: 0;
 }
 
+.no-border-top {
+    border-top-color: transparent !important;
+}
+
+.no-border-right {
+    border-right-color: transparent !important;
+}
+
+.no-border-bottom {
+    border-bottom-color: transparent !important;
+}
+
+.no-border-left {
+    border-left-color: transparent !important;
+}
+
 .white {
-    background-color: #f2f5f0;
+    background: #ffffff;
 }
 
 .red {
-    background-color: #df2618;
-}
-
-.blue {
-    background-color: #002394;
+    background: #ff0000;
 }
 
 .yellow {
-    background-color: #f7cb15;
+    background: #ffff00;
+}
+
+.blue {
+    background: #0000ff;
 }
 
 .black {
-    background-color: #020202;
+    background: #000000;
+}
+
+.narrow {
+    width: 30px;
+}
+
+.big-row {
+    height: 80px;
+}
+
+.medium-row {
+    height: 50px;
+}
+
+.small-row {
+    height: 20px;
 }
