@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.experiment-header {
+    text-align: center;
+}
+
+.scroll-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    width: 120px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.box-static {
+    background-color: gray;
+    position: static;
+    top: 50px;
+}
+
+.box-relative {
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.parent-container {
+    position: relative;
+    height: 150px;
+    background-color: aliceblue;
+    border: 2px dashed blue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.box-absolute {
+    background-color: purple;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 0;
+}
+
+.box-fixed {
+    background-color: darkred;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.box-sticky {
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.spacer {
+    height: 500px;
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 20px;
+    color: gray;
+}
+
+.main-navigation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}

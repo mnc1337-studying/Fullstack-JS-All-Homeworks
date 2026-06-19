@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.task-menu-paragraph {
+    margin: 50px 0;
+}
+
+.task-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-menu-list li {
+    margin: 5px 0;
+}
+
+.task-link {
+    display: block;
+    padding: 10px;
+    background-color: #006400;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.task-link:hover {
+    background-color: #00f;
+    transform: scale(1.05);
+}

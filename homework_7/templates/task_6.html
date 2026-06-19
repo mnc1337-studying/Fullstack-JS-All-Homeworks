@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Експерименти з overflow</title>
+    <link rel="stylesheet" href="../styles/task_6.css">
+</head>
+
+<body>
+    <h1 class="experiment-header">Експерименти з властивістю overflow</h1>
+
+    <div class="container-grid">
+        <div>
+            <h2>overflow: visible</h2>
+            <div class="box overflow-visible">
+                Текст вилізає за межі блоку, оскільки за замовчуванням видимість контенту не обмежується розмірами
+                батьківського елемента.
+            </div>
+        </div>
+
+        <div>
+            <h2>overflow: hidden</h2>
+            <div class="box overflow-hidden">
+                Все, що не вмістилося в рамки контейнера, просто обрізається й стає невидимим для користувача.
+            </div>
+        </div>
+
+        <div>
+            <h2>overflow: scroll</h2>
+            <div class="box overflow-scroll">
+                Браузер примусово додає смуги прокрутки (горизонтальну та вертикальну), навіть якщо текст вміщається
+                повністю.
+            </div>
+        </div>
+
+        <div>
+            <h2>overflow: auto</h2>
+            <div class="box overflow-auto">
+                Смуга прокрутки з'являється автоматично й лише тоді, коли контенту дійсно забагато і він не влізає.
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-navigation">
+        <a href="../index.html" class="return-button">Повернутися на головну сторінку</a>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.experiment-header {
+    text-align: center;
+}
+
+.container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.box {
+    width: 175px;
+    height: 100px;
+    background-color: lightyellow;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.main-navigation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}

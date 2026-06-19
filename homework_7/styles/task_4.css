@@ -1,0 +1,68 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.experiment-header {
+    text-align: center;
+}
+
+.display-container > div {
+    margin: 10px 0;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.display-container-block {
+    display: block;
+}
+
+.display-container-inline-block {
+    display: inline-block;
+}
+
+.display-container-flex {
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    margin: 5px;
+    display: block; 
+}
+
+.size-box {
+    width: 150px;
+    height: 60px;
+    padding: 20px;
+    border: 10px solid black;
+    margin-bottom: 10px;
+    background-color: lightblue;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.main-navigation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}

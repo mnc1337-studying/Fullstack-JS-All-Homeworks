@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.page-container {
+    display: block;
+    max-width: 750px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border: 1px solid gray;
+}
+
+.page-container-header {
+    text-align: center;
+}
+
+.page-container-section {
+    padding: 15px;
+}
+
+.experiment-conclusion {
+    padding: 20px;
+}
+
+.main-navigation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}

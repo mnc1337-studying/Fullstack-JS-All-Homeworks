@@ -1,0 +1,34 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+.page-container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+.page-container-header {
+    text-align: center;
+}
+
+.main-navigation {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}

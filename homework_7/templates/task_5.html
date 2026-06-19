@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Практика з float та clear</title>
+    <link rel="stylesheet" href="../styles/task_5.css">
+</head>
+
+<body>
+    <h1 class="main-header">Практика з float та clear</h1>
+
+    <div class="wrapper">
+        <div class="float-box-left">Float Box Left</div>
+        <img src="https://picsum.photos/120/80" alt="Тестове фото" class="float-img-right">
+
+        <p class="text">
+            Цей текст демонструє ефект двостороннього обтікання. Блок ліворуч має властивість float: left, а зображення
+            праворуч - float: right. Текст обережно заповнює весь вільний простір між ними, адаптуючись під розміри обох
+            об'єктів.
+        </p>
+
+        <div class="clear-box">Блок з властивістю clear: both</div>
+        <p class="text">
+            Цей абзац уже не обтікає жоден з попередніх елементів, тому що перед ним стоїть блок із властивістю clear:
+            both. Вона повністю скидає обтікання як з лівого, так і з правого боку.
+        </p>
+    </div>
+
+    <nav class="main-navigation">
+        <a href="../index.html" class="return-button">Повернутися на головну сторінку</a>
+    </nav>
+</body>
+
+</html>

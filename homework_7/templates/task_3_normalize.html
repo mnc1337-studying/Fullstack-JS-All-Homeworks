@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Нормалізація стилів</title>
+    <link rel="stylesheet" href="../styles/task_3_normalize.css">
+    <link rel="stylesheet" href="../styles/task_3_normalize_custom.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <h1 class="page-container-header">Експеримент: Поведінка елементів з нормалізацією стилів</h1>
+
+        <section class="page-container-section">
+            <h2>Заголовок другого рівня (h2)</h2>
+            <p>Абзац тексту. У ньому є <strong>жирний текст</strong> та <em>курсив</em>.</p>
+
+            <ul>
+                <li>Перший елемент маркованого списку</li>
+                <li>Другий елемент маркованого списку</li>
+            </ul>
+
+            <form class="page-container-form">
+                <input type="text" placeholder="Введіть текст...">
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <br>
+        <hr>
+
+        <h3>Висновки експерименту</h3>
+        <p class="experiment-conclusion">
+            Під час цього експерименту було з'ясовано, що нормалізація стилів (<strong>normalize.css</strong>) діє дуже
+            делікатно. Вона не знищує стандартний вигляд елементів, а лише приводить його до єдиного вигляду в усіх
+            браузерах. Заголовки залишаються великими та жирними, списки зберігають свої відступи (марджини/паддинги) та
+            круглі маркери, а кнопки та інпути мають акуратні дефолтні рамки.
+        </p>
+
+        <nav class="main-navigation">
+            <a href="../index.html" class="return-button">Повернутися на головну сторінку</a>
+        </nav>
+    </div>
+</body>
+
+</html>
