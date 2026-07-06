@@ -1,6 +1,6 @@
 :root {
-    --font-weight-light: 400;
-    --font-weight-bold: 500;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
 }
 
 * {
@@ -32,12 +32,11 @@ p {
 }
 
 .header__list {
-    width: 565px;
-    height: 16px;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 50px;
     list-style-type: none;
     background-color: #eeeff1;
 }
@@ -45,7 +44,7 @@ p {
 .header__item {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
 }
 
 .header__link {
@@ -71,7 +70,7 @@ p {
 .hero__title {
     font-size: 48px;
     line-height: 1.64;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     color: #000000;
     margin-bottom: 50px;
 }
@@ -79,7 +78,7 @@ p {
 .hero__description {
     font-size: 16px;
     line-height: 1.64;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     color: #727272;
     width: 540px;
 }
@@ -88,7 +87,7 @@ p {
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     line-height: 1.64;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -111,7 +110,7 @@ p {
 .about__title {
     font-size: 32px;
     line-height: 1;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     color: #000000;
     text-transform: capitalize;
     margin-bottom: 50px;
@@ -120,7 +119,7 @@ p {
 .about__description {
     font-size: 16px;
     line-height: 1.64;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     color: #727272;
     width: 540px;
     text-align: center;
@@ -147,7 +146,7 @@ p {
 .stats__title {
     font-size: 21px;
     line-height: 1;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     color: #ffffff;
     margin-bottom: 2px;
 }
@@ -155,7 +154,7 @@ p {
 .stats__description {
     font-size: 16px;
     line-height: 1.64;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     color: #ffffff;
     margin: 0;
 }
@@ -171,14 +170,14 @@ p {
 .work__title {
     font-size: 32px;
     line-height: 1;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     margin-bottom: 50px;
 }
 
 .work__description {
     font-size: 16px;
     line-height: 1.64;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     color: #727272;
     width: 540px;
     text-align: center;
@@ -216,7 +215,7 @@ p {
 .footer__title {
     font-size: 21px;
     line-height: 1;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -224,7 +223,7 @@ p {
 .footer__copyright {
     font-size: 13px;
     line-height: 1.64;
-    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-normal);
     color: #ffffff;
 }
 
@@ -289,7 +288,7 @@ p {
     }
 
     .header__list {
-        width: 100%;
+        /* width: 100%; */
         gap: 30px;        
     }
 
