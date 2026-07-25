@@ -1,0 +1,55 @@
+@use "sass:map";
+@use "../base/variables" as variables;
+
+$breakpoints: (
+    "desktop-sm": 1000px,
+    "tablet": 650px,
+    "mobile-lg": 600px,
+    "mobile-sm": 450px
+);
+
+
+@mixin media-respond-to($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+
+    @if $direction == column {
+        flex-direction: column;
+    }
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin section-description($width: 540px, $align: center) {
+    font-size: 16px;
+    line-height: 1.64;
+    font-weight: variables.$font-weight-normal;
+    color: variables.$color-text-medium;
+    width: $width;
+    text-align: $align;
+}
+
+
+@mixin section-title($font-size: 32px, $mb: 50px) {
+    font-size: $font-size;
+    line-height: 1;
+    font-weight: variables.$font-weight-medium;
+    margin-bottom: $mb;
+}
+
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
