@@ -1,0 +1,65 @@
+@use "../abstract/mixins" as mixins;
+@use "../base/variables" as variables;
+
+
+.hero {
+    padding-top: 258px;
+    padding-left: 20%;
+    background-color: #eeeff1;
+
+    @include mixins.media-respond-to(1000px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        @include mixins.flex-center(column);
+    }
+
+    @include mixins.media-respond-to(600px) {
+        padding-top: 178px;
+    }
+
+    &__title {
+        color: variables.$color-text-dark;
+
+        @include mixins.section-title(48px, 1.64);
+
+        @include mixins.media-respond-to(1000px) {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        @include mixins.section-description();
+
+        @include mixins.media-respond-to(1000px) {
+            text-align: center;
+        }
+
+        @include mixins.media-respond-to(600px) {
+            width: auto;
+            font-size: 14px;
+            padding: 0 25px;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: var(--font-weight-normal);
+        line-height: 1.64;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background-color: #34547a;
+        color: #ffffff;
+        border: transparent;
+        padding: 20px 46px;
+        margin-top: 64px;
+        margin-bottom: 142px;
+
+        @include mixins.media-respond-to(600px) {
+            font-size: 12px;
+            line-height: 1;
+        }
+    }
+}

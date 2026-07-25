@@ -1,0 +1,33 @@
+@use "../abstract/mixins" as mixins;
+@use "../base/variables" as variables;
+
+
+.footer {
+    margin-top: 100px;
+    padding: 50px 20%;
+    background-color: variables.$color-bg-dark;
+
+    @include mixins.media-respond-to(1000px) {
+        @include mixins.flex-center(column);
+    }
+
+    &__title {
+        color: variables.$color-text-light;
+
+        @include mixins.section-title(21px, $margin-bottom: 20px);
+
+        @include mixins.media-respond-to(450px) {
+            font-size: 18px;
+        }
+    }
+
+    &__copyright {
+        font-size: 13px;
+        line-height: 1.64;
+        color: variables.$color-text-light;
+
+        @include mixins.media-respond-to(450px) {
+            font-size: 11px;
+        }
+    }
+}

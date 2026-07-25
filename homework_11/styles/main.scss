@@ -1,8 +1,13 @@
 @use "./abstract/mixins";
 
-@use "./base/reset";
+@use "./base/base";
 @use "./base/variables";
 
-@use "./components/header";
-@use "./layout/app";
-@use "./components/footer";
+@use "./layout/header";
+
+@use "./components/hero";
+@use "./components/about";
+@use "./components/stats";
+@use "./components/work";
+
+@use "./layout/footer";

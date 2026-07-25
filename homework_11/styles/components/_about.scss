@@ -1,0 +1,26 @@
+@use "../abstract/mixins" as mixins;
+@use "../base/variables" as variables;
+
+
+.about {
+    margin-top: 112px;
+
+    @include mixins.flex-center(column);
+
+    &__title {
+        color: variables.$color-text-dark;
+        text-transform: capitalize;
+
+        @include mixins.section-title();
+    }
+
+    &__description {
+        @include mixins.section-description();
+
+        @include mixins.media-respond-to(600px) {
+            width: auto;
+            font-size: 14px;
+            padding: 0 25px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@use "../abstract/mixins" as mixins;
+@use "../base/variables" as variables;
+
+
+.stats {
+    margin-top: 100px;
+    padding: 100px;
+    list-style-type: none;
+    background-color: #34547a;
+    
+    @include mixins.flex-center();
+
+    flex-wrap: wrap;
+    gap: 50px 40px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__title {
+        @include mixins.section-title(21px, $margin-bottom: 2px);
+
+        color: variables.$color-text-light;
+    }
+
+    &__description {
+        @include mixins.section-description();
+        
+        width: auto;
+        color: variables.$color-text-light;
+        margin: 0;
+    }
+}

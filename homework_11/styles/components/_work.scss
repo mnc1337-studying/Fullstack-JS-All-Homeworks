@@ -1,0 +1,45 @@
+@use "../abstract/mixins" as mixins;
+@use "../base/variables" as variables;
+
+
+.work {
+    margin-top: 100px;
+
+    @include mixins.flex-center(column);
+
+    &__title {
+        @include mixins.section-title();
+    }
+
+    &__description {
+        @include mixins.section-description();
+
+        @include mixins.media-respond-to(600px) {
+            width: auto;
+            font-size: 14px;
+            padding: 0 25px;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 56px;
+        position: relative;
+        
+        @include mixins.flex-center();
+    }
+
+    &__image {
+        width: 80%;
+    }
+
+    &__image-decor {
+        position: absolute;
+        width: 10%;
+
+        &--centered {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

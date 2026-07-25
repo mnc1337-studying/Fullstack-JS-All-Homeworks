@@ -6,3 +6,10 @@ $color-bg-dark: #34547a;
 $color-text-dark: #000000;
 $color-text-medium: #727272;
 $color-text-light: #ffffff;
+
+$breakpoints: (
+    1000px: 1000px,
+    650px: 650px,
+    600px: 600px,
+    450px: 450px
+);

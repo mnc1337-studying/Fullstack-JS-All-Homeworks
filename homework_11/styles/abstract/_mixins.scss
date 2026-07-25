@@ -1,17 +1,10 @@
 @use "sass:map";
 @use "../base/variables" as variables;
 
-$breakpoints: (
-    "desktop-sm": 1000px,
-    "tablet": 650px,
-    "mobile-lg": 600px,
-    "mobile-sm": 450px
-);
-
 
 @mixin media-respond-to($breakpoint) {
-    @if map.has-key($breakpoints, $breakpoint) {
-        @media (max-width: map.get($breakpoints, $breakpoint)) {
+    @if map.has-key(variables.$breakpoints, $breakpoint) {
+        @media (max-width: map.get(variables.$breakpoints, $breakpoint)) {
             @content;
         }
     }
@@ -39,17 +32,9 @@ $breakpoints: (
 }
 
 
-@mixin section-title($font-size: 32px, $mb: 50px) {
+@mixin section-title($font-size: 32px, $line-height: 1, $margin-bottom: 50px) {
     font-size: $font-size;
-    line-height: 1;
+    line-height: $line-height;
     font-weight: variables.$font-weight-medium;
-    margin-bottom: $mb;
-}
-
-
-@mixin absolute-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: $margin-bottom;
 }
