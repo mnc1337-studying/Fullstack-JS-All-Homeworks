@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.animation-unique {
+    animation: colorful-blink 5s ease-in-out infinite alternate;
+}
+
+@keyframes colorful-blink {
+    0% {
+        fill: blue;
+        stroke: #5353cf;
+    }
+
+    25% {
+        fill: green;
+        stroke: #54e754;
+    }
+
+    50% {
+        fill: yellow;
+        stroke: #99991d;
+    }
+
+    75% {
+        fill: orange;
+        stroke: #916a24;
+    }
+
+    100% {
+        fill: red;
+        stroke: #720000;
+    }
+}
