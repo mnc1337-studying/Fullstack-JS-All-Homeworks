@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <h1 class="visually-hidden">Nature Protection Service Official Portal</h1>
+
     <div class="container-fluid">
         <div class="row mb-5" id="header-section">
             <div class="col-12 p-0">
@@ -23,16 +25,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item dropdown">
-                                <a href="#" id="navbarDropdown" class="nav-link dropdown-toggle" role="button"
+                                <a href="#" id="navbarDropdown" class="nav-link dropdown-toggle"
                                     data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href="#header-section" class="dropdown-item">Page start</a>
-                                    <a href="#left-sidebar-section" class="dropdown-item">Nature images</a>
-                                    <a href="#mainAccordion" class="dropdown-item">Nature statements</a>
-                                    <a href="#mainForm" class="dropdown-item">Sign up form</a>
-                                    <a href="#right-sidebar-section" class="dropdown-item">Nature facts</a>
-                                    <a href="#footer-section" class="dropdown-item">Copyright</a>
-                                </div>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="#header-section" class="dropdown-item">Page start</a></li>
+                                    <li><a href="#left-sidebar-section" class="dropdown-item">Nature images</a></li>
+                                    <li><a href="#mainAccordion" class="dropdown-item">Nature statements</a></li>
+                                    <li><a href="#mainForm" class="dropdown-item">Sign up form</a></li>
+                                    <li><a href="#right-sidebar-section" class="dropdown-item">Nature facts</a></li>
+                                    <li><a href="#footer-section" class="dropdown-item">Copyright</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -58,11 +60,13 @@
                             <img class="d-block w-100" src="./images/waterfall.jpg" alt="Fourth slide">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -71,7 +75,7 @@
 
             <div class="col-md-6 mb-4 mb-md-0" id="main-section">
                 <h2 class="text-center">Nature statements</h2>
-                
+
                 <div class="accordion my-4" id="mainAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -80,10 +84,13 @@
                                 Nature statement №1
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#mainAccordion">
+                        <div id="collapseOne" class="accordion-collapse collapse show" role="region"
+                            aria-labelledby="headingOne" data-bs-parent="#mainAccordion">
                             <div class="accordion-body">
-                                Trees in a forest don't just grow side by side — they communicate and support one another through an underground fungal network nicknamed the "Wood Wide Web." Through this network, older "mother trees" transfer sugar, water, and nutrients to young saplings growing in the shade.
+                                Trees in a forest don't just grow side by side — they communicate and support one
+                                another through an underground fungal network nicknamed the "Wood Wide Web." Through
+                                this network, older "mother trees" transfer sugar, water, and nutrients to young
+                                saplings growing in the shade.
                             </div>
                         </div>
                     </div>
@@ -94,10 +101,13 @@
                                 Nature statement №2
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#mainAccordion">
+                        <div id="collapseTwo" class="accordion-collapse collapse" role="region"
+                            aria-labelledby="headingTwo" data-bs-parent="#mainAccordion">
                             <div class="accordion-body">
-                                The world ocean is home to the only scientifically proven "immortal" creature on Earth — a tiny jellyfish called Turritopsis dohrnii. When injured, aging, or starving, it can completely reset its life cycle, transforming back into a youthful polyp from which new jellyfish grow.
+                                The world ocean is home to the only scientifically proven "immortal" creature on Earth —
+                                a tiny jellyfish called Turritopsis dohrnii. When injured, aging, or starving, it can
+                                completely reset its life cycle, transforming back into a youthful polyp from which new
+                                jellyfish grow.
                             </div>
                         </div>
                     </div>
@@ -108,10 +118,12 @@
                                 Nature statement №3
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#mainAccordion">
+                        <div id="collapseThree" class="accordion-collapse collapse" role="region"
+                            aria-labelledby="headingThree" data-bs-parent="#mainAccordion">
                             <div class="accordion-body">
-                                Deep beneath the Chihuahuan Desert in Mexico lies the Cave of the Crystals, home to some of the largest natural selenite crystals ever found, with individual beams reaching over 30 feet in length and weighing up to 55 tons.
+                                Deep beneath the Chihuahuan Desert in Mexico lies the Cave of the Crystals, home to some
+                                of the largest natural selenite crystals ever found, with individual beams reaching over
+                                30 feet in length and weighing up to 55 tons.
                             </div>
                         </div>
                     </div>
@@ -119,43 +131,42 @@
 
                 <form id="mainForm" class="mb-5">
                     <h2 class="text-center">Sign up to our service and receive benefits from nature!</h2>
-                    
-                    <div class="mb-3 mt-4">
+
+                    <div class="mt-4 mb-3">
                         <label for="emailInput" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="passwordInput" class="form-label">Password</label>
                         <input type="password" class="form-control" id="passwordInput" aria-describedby="passwordHelp">
-                        <div id="passwordHelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers.</div>
+                        <div id="passwordHelp" class="form-text">Your password must be 8-20 characters long, contain
+                            letters and numbers.</div>
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="ageInput" class="form-label">Age</label>
                         <input type="number" min="18" max="99" class="form-control" id="ageInput">
                     </div>
-                    
+
                     <div class="mb-3">
                         <label for="preferencesSelect" class="form-label">Your landscape preferences</label>
                         <select id="preferencesSelect" class="form-select">
                             <option value="default" selected disabled>Choose your favorite landscape...</option>
-                            <option value="forest">Forest & Woodlands 🌲</option>
-                            <option value="mountains">Mountains & Peaks ⛰️</option>
-                            <option value="sea">Sea & Coastline 🌊</option>
-                            <option value="canyon">Canyons & Caves 🏜️</option>
-                            <option value="waterfall">Waterfalls & Rivers 💧</option>
+                            <option value="forest">Forest &amp; Woodlands 🌲</option>
+                            <option value="mountains">Mountains &amp; Peaks ⛰️</option>
+                            <option value="sea">Sea &amp; Coastline 🌊</option>
+                            <option value="canyon">Canyons &amp; Caves 🏜️</option>
+                            <option value="waterfall">Waterfalls &amp; Rivers 💧</option>
                             <option value="desert">Desert Dunes 🌵</option>
                         </select>
                     </div>
-                
+
                     <div class="mb-4 text-center">
                         <div class="form-check form-check-reverse d-inline-block">
                             <input type="checkbox" class="form-check-input" id="confirmInput">
-                            <label for="confirmInput" class="form-check-label">
-                                Receive news from service via your email?
-                            </label>
+                            <label for="confirmInput" class="form-check-label">Receive news from service via your email?</label>
                         </div>
                     </div>
 
@@ -168,12 +179,20 @@
             <div class="col-md-3" id="right-sidebar-section">
                 <h2 class="text-center">Nature facts</h2>
                 <ul class="nav flex-column align-items-center mt-4">
-                    <li class="nav-item text-center"><a href="https://onetreeplanted.org/blogs/stories/nature-fun-facts/" class="nav-link">One Tree Planted</a></li>
-                    <li class="nav-item text-center"><a href="https://greenerinsights.com/45-incredible-nature-facts-to-know/" class="nav-link">Greener Insights</a></li>
-                    <li class="nav-item text-center"><a href="https://www.nationalgeographic.com/science/" class="nav-link">National Geographic</a></li>
-                    <li class="nav-item text-center"><a href="https://naturenfacts.com/" class="nav-link">Nature & Facts</a></li>
-                    <li class="nav-item text-center"><a href="https://www.buzzfeed.com/terripous/nature-facts/" class="nav-link">Buzz Feed</a></li>
-                    <li class="nav-item text-center"><a href="https://www.worldwildlife.org/resources/facts/" class="nav-link">World Wide Life</a></li>
+                    <li class="nav-item text-center"><a
+                            href="https://onetreeplanted.org/blogs/stories/nature-fun-facts/" class="nav-link" target="_blank">One Tree
+                            Planted</a></li>
+                    <li class="nav-item text-center"><a
+                            href="https://greenerinsights.com/45-incredible-nature-facts-to-know/"
+                            class="nav-link" target="_blank">Greener Insights</a></li>
+                    <li class="nav-item text-center"><a href="https://www.nationalgeographic.com/science/"
+                            class="nav-link" target="_blank">National Geographic</a></li>
+                    <li class="nav-item text-center"><a href="https://naturenfacts.com/" class="nav-link" target="_blank">Nature &amp;
+                            Facts</a></li>
+                    <li class="nav-item text-center"><a href="https://www.buzzfeed.com/terripous/nature-facts/"
+                            class="nav-link" target="_blank">Buzz Feed</a></li>
+                    <li class="nav-item text-center"><a href="https://www.worldwildlife.org/resources/facts/"
+                            class="nav-link" target="_blank">World Wide Life</a></li>
                 </ul>
 
                 <figure class="figure my-4 text-center w-100">
