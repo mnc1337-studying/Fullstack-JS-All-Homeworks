@@ -14,41 +14,53 @@
         <h1 hidden>Product Feedback App</h1>
         <div class="board">
             <aside class="sidebar">
+                <input type="checkbox" id="mobile-menu-toggle" class="sidebar__checkbox">
+
                 <div class="sidebar__header">
-                    <h2 class="sidebar__title">Frontend Mentor</h2>
-                    <p class="sidebar__subtitle">Feedback Board</p>
+                    <div class="sidebar__brand">
+                        <h1 class="sidebar__title">Frontend Mentor</h1>
+                        <p class="sidebar__subtitle">Feedback Board</p>
+                    </div>
+
+                    <label for="mobile-menu-toggle" class="sidebar__toggle" aria-label="Toggle menu">
+                        <span class="sidebar__toggle-icon"></span>
+                    </label>
                 </div>
 
-                <nav class="filter-tags">
-                    <ul class="filter-tags__list">
-                        <li><button class="tag tag--active">All</button></li>
-                        <li><button class="tag">UI</button></li>
-                        <li><button class="tag">UX</button></li>
-                        <li><button class="tag">Enhancement</button></li>
-                        <li><button class="tag">Bug</button></li>
-                        <li><button class="tag">Feature</button></li>
-                    </ul>
-                </nav>
+                <div class="sidebar__overlay"></div>
 
-                <div class="roadmap">
-                    <div class="roadmap__header">
-                        <h3 class="roadmap__title">Roadmap</h3>
-                        <a href="#" class="roadmap__link">View</a>
+                <div class="sidebar__content">
+                    <nav class="filter-tags">
+                        <ul class="filter-tags__list">
+                            <li><button class="tag tag--active">All</button></li>
+                            <li><button class="tag">UI</button></li>
+                            <li><button class="tag">UX</button></li>
+                            <li><button class="tag">Enhancement</button></li>
+                            <li><button class="tag">Bug</button></li>
+                            <li><button class="tag">Feature</button></li>
+                        </ul>
+                    </nav>
+
+                    <div class="roadmap">
+                        <div class="roadmap__header">
+                            <h3 class="roadmap__title">Roadmap</h3>
+                            <a href="#" class="roadmap__link">View</a>
+                        </div>
+                        <ul class="roadmap__list">
+                            <li class="roadmap__item roadmap__item--planned">
+                                <span class="roadmap__status">Planned</span>
+                                <span class="roadmap__count">2</span>
+                            </li>
+                            <li class="roadmap__item roadmap__item--in-progress">
+                                <span class="roadmap__status">In-Progress</span>
+                                <span class="roadmap__count">3</span>
+                            </li>
+                            <li class="roadmap__item roadmap__item--live">
+                                <span class="roadmap__status">Live</span>
+                                <span class="roadmap__count">1</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="roadmap__list">
-                        <li class="roadmap__item roadmap__item--planned">
-                            <span class="roadmap__status">Planned</span>
-                            <span class="roadmap__count">2</span>
-                        </li>
-                        <li class="roadmap__item roadmap__item--in-progress">
-                            <span class="roadmap__status">In-Progress</span>
-                            <span class="roadmap__count">3</span>
-                        </li>
-                        <li class="roadmap__item roadmap__item--live">
-                            <span class="roadmap__status">Live</span>
-                            <span class="roadmap__count">1</span>
-                        </li>
-                    </ul>
                 </div>
             </aside>
 
@@ -60,13 +72,23 @@
                     </div>
 
                     <div class="toolbar__sort">
-                        <label for="sort-select" class="toolbar__sort-label">Sort by :</label>
-                        <select id="sort-select" class="toolbar__sort-select">
-                            <option value="most-upvotes" selected>Most Upvotes</option>
-                            <option value="least-upvotes">Least Upvotes</option>
-                            <option value="most-comments">Most Comments</option>
-                            <option value="least-comments">Least Comments</option>
-                        </select>
+                        <input type="checkbox" id="sort-toggle" class="toolbar__sort-checkbox">
+
+                        <label for="sort-toggle" class="toolbar__sort-button">
+                            <span class="toolbar__sort-label">Sort by :</span>
+                            <span class="toolbar__sort-value">Most Upvotes</span>
+                            <span class="toolbar__sort-arrow"></span>
+                        </label>
+
+                        <ul class="sort-menu">
+                            <li class="sort-menu__item sort-menu__item--selected">
+                                Most Upvotes
+                                <img src="./assets/icons/icon-check.svg" alt="Check icon" class="sort-menu__check">
+                            </li>
+                            <li class="sort-menu__item">Least Upvotes</li>
+                            <li class="sort-menu__item">Most Comments</li>
+                            <li class="sort-menu__item">Least Comments</li>
+                        </ul>
                     </div>
 
                     <button class="button button--purple toolbar__button">

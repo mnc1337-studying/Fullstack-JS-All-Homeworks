@@ -1,7 +1,12 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+@use "../abstract/mixins" as mixins;
 
 .suggestions {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include mixins.media-respond-to("tablet") {
+        gap: 16px;
+    }
 }

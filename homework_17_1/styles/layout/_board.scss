@@ -1,7 +1,14 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+@use "../abstract/mixins" as mixins;
 
 .board {
-    display: flex;
+    display: grid;
+    grid-template-columns: 255px 1fr;
     gap: 30px;
-    align-items: flex-start;
+    align-items: start;
+
+    @include mixins.media-respond-to ("tablet") {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }

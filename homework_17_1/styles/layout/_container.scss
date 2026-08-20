@@ -1,7 +1,12 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+@use "../abstract/mixins" as mixins;
 
 .container {
     max-width: 1110px;
-    margin: 94px auto;
-    padding: 0 24px;
+    margin: 0 auto;
+    padding: 94px 24px;
+
+    @include mixins.media-respond-to("tablet") {
+        padding: 56px 24px;
+    }
 }

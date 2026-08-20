@@ -1,0 +1,43 @@
+@use "../abstract/variables" as v;
+
+.sort-menu {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 0;
+    width: 255px;
+    background-color: v.$color-white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.35);
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+
+    &__item {
+        padding: 12px 24px;
+        font-size: 16px;
+        color: v.$color-muted-blue;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(58, 67, 116, 0.15);
+        transition: color 0.2s ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: v.$color-purple;
+        }
+
+        &--selected {
+            color: v.$color-purple;
+        }
+    }
+
+    &__check {
+        width: 13px;
+        height: 11px;
+    }
+}
