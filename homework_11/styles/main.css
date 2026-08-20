@@ -25,7 +25,6 @@ p {
   z-index: 1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-
 @media (max-width: 1000px) {
   .header {
     padding-left: 10px;
@@ -36,13 +35,11 @@ p {
     align-items: center;
   }
 }
-
 @media (max-width: 600px) {
   .header {
     padding: 40px 5px;
   }
 }
-
 .header__list {
   margin: 0;
   padding: 0;
@@ -52,48 +49,39 @@ p {
   list-style-type: none;
   background-color: #eeeff1;
 }
-
 @media (max-width: 650px) {
   .header__list {
     justify-content: space-evenly;
   }
 }
-
 @media (max-width: 600px) {
   .header__list {
     gap: 30px;
   }
 }
-
 @media (max-width: 450px) {
   .header__list {
     max-width: 360px;
     gap: 15px;
   }
 }
-
 .header__item {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
 }
-
 @media (max-width: 650px) {
   .header__item {
     font-size: 14px;
   }
 }
-
 .header__link {
   text-decoration: none;
   color: #000000;
 }
-
-.header__link:active,
-.header__link:visited {
+.header__link:active, .header__link:visited {
   color: #0101c4;
 }
-
 .header__link:hover {
   color: #0000ff;
 }
@@ -103,7 +91,6 @@ p {
   padding-left: 20%;
   background-color: #eeeff1;
 }
-
 @media (max-width: 1000px) {
   .hero {
     padding-left: 10px;
@@ -114,13 +101,11 @@ p {
     align-items: center;
   }
 }
-
 @media (max-width: 600px) {
   .hero {
     padding-top: 178px;
   }
 }
-
 .hero__title {
   color: #000000;
   font-size: 48px;
@@ -128,13 +113,11 @@ p {
   font-weight: 500;
   margin-bottom: 50px;
 }
-
 @media (max-width: 1000px) {
   .hero__title {
     text-align: center;
   }
 }
-
 .hero__description {
   font-size: 16px;
   line-height: 1.64;
@@ -143,13 +126,11 @@ p {
   width: 540px;
   text-align: center;
 }
-
 @media (max-width: 1000px) {
   .hero__description {
     text-align: center;
   }
 }
-
 @media (max-width: 600px) {
   .hero__description {
     width: auto;
@@ -157,7 +138,6 @@ p {
     padding: 0 25px;
   }
 }
-
 .hero__button {
   cursor: pointer;
   font-family: inherit;
@@ -173,7 +153,6 @@ p {
   margin-top: 64px;
   margin-bottom: 142px;
 }
-
 @media (max-width: 600px) {
   .hero__button {
     font-size: 12px;
@@ -188,7 +167,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .about__title {
   color: #000000;
   text-transform: capitalize;
@@ -197,7 +175,6 @@ p {
   font-weight: 500;
   margin-bottom: 50px;
 }
-
 .about__description {
   font-size: 16px;
   line-height: 1.64;
@@ -206,7 +183,6 @@ p {
   width: 540px;
   text-align: center;
 }
-
 @media (max-width: 600px) {
   .about__description {
     width: auto;
@@ -226,13 +202,11 @@ p {
   flex-wrap: wrap;
   gap: 50px 40px;
 }
-
 .stats__item {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .stats__title {
   font-size: 21px;
   line-height: 1;
@@ -240,7 +214,6 @@ p {
   margin-bottom: 2px;
   color: #ffffff;
 }
-
 .stats__description {
   font-size: 16px;
   line-height: 1.64;
@@ -260,14 +233,12 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .work__title {
   font-size: 32px;
   line-height: 1;
   font-weight: 500;
   margin-bottom: 50px;
 }
-
 .work__description {
   font-size: 16px;
   line-height: 1.64;
@@ -276,7 +247,6 @@ p {
   width: 540px;
   text-align: center;
 }
-
 @media (max-width: 600px) {
   .work__description {
     width: auto;
@@ -284,7 +254,6 @@ p {
     padding: 0 25px;
   }
 }
-
 .work__wrapper {
   margin-top: 56px;
   position: relative;
@@ -292,16 +261,13 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .work__image {
   width: 80%;
 }
-
 .work__image-decor {
   position: absolute;
   width: 10%;
 }
-
 .work__image-decor--centered {
   top: 50%;
   left: 50%;
@@ -313,7 +279,6 @@ p {
   padding: 50px 20%;
   background-color: #34547a;
 }
-
 @media (max-width: 1000px) {
   .footer {
     display: flex;
@@ -322,7 +287,6 @@ p {
     align-items: center;
   }
 }
-
 .footer__title {
   color: #ffffff;
   font-size: 21px;
@@ -330,23 +294,18 @@ p {
   font-weight: 500;
   margin-bottom: 20px;
 }
-
 @media (max-width: 450px) {
   .footer__title {
     font-size: 18px;
   }
 }
-
 .footer__copyright {
   font-size: 13px;
   line-height: 1.64;
   color: #ffffff;
 }
-
 @media (max-width: 450px) {
   .footer__copyright {
     font-size: 11px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
