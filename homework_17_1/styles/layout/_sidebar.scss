@@ -1,0 +1,34 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
+.sidebar {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-shrink: 0;
+
+    &__header {
+        height: 137px;
+        background-image: url("../assets/images/backgrounds/background-header-desktop.png");
+        // background: radial-gradient(128.88% 128.88% at 103.03% -0.8%, #e84d70 0%, #a337f6 53.09%, #28a7ed 100%);
+        border-radius: 10px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: v.$color-white;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: v.$font-weight-bold;
+        letter-spacing: -0.25px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        font-weight: v.$font-weight-medium;
+        opacity: 0.75;
+    }
+}

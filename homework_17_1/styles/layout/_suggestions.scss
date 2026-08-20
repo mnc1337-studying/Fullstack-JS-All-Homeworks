@@ -1,0 +1,7 @@
+@use "../abstract/variables" as v;
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

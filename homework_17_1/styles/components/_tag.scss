@@ -1,0 +1,26 @@
+@use "../abstract/variables" as v;
+
+.tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: v.$color-light-blue-1;
+    color: v.$color-blue;
+    font-size: 13px;
+    font-weight: v.$font-weight-semibold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: #cfd7ff;
+    }
+
+    &--active {
+        background-color: v.$color-blue;
+        color: v.$color-white;
+
+        &:hover {
+            background-color: v.$color-blue;
+        }
+    }                   
+}

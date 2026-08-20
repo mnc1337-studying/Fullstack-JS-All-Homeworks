@@ -6,28 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
+        <h1 hidden></h1>
         <div class="board">
-            <aside class="sidebar"></aside>
-            <main class="main">
-                <div class="toolbar">
+            <aside class="sidebar">
+                <div class="sidebar_header">
 
                 </div>
+                <nav>
+                    <ul>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                    </ul>
+                </nav>
+                <div class="roadmap">
+
+                </div>
+            </aside>
+            <main class="main">
+                <div class="toolbar">
+                    <div class="toolbar__logo">
+                        <img src="./assets/icons/icon-suggestions.svg" alt="Suggestions icon">
+                        <h2></h2>
+                    </div>
+
+                    <div class="toolbar_sort">
+                        <button>
+                            <p>Sort by: </p>
+                            <span>Most Upvotes</span>
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Arrow up icon">
+                        </button>
+                    </div>
+
+                    <button class="toolbar__feedback">
+                        <span>+</span>
+                        <span>Add feedback</span>
+                    </button>
+                </div>
+
                 <ul class="suggestions">
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>112</span>
                         </button>
 
                         <div class="suggestion_content">
                             <a href="#" class="suggestion_title">Add tags for solutions</a>
-                            <p class="suggestion_description">Easier to search for solutions based on a specific stack.</p>
+                            <p class="suggestion_description">Easier to search for solutions based on a specific stack.
+                            </p>
                             <div class="tag">Enhancement</div>
                         </div>
 
@@ -40,14 +78,16 @@
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>99</span>
                         </button>
 
                         <div class="suggestion_content">
                             <a href="#" class="suggestion_title">Add a dark theme option</a>
-                            <p class="suggestion_description">It would help people with light sensitivities and who prefer dark mode.</p>
+                            <p class="suggestion_description">It would help people with light sensitivities and who
+                                prefer dark mode.</p>
                             <div class="tag">Feature</div>
                         </div>
 
@@ -60,7 +100,8 @@
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>65</span>
                         </button>
@@ -80,14 +121,16 @@
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>52</span>
                         </button>
 
                         <div class="suggestion_content">
                             <a href="#" class="suggestion_title">Allow image/video upload</a>
-                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.</p>
+                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.
+                            </p>
                             <div class="tag">Enhancement</div>
                         </div>
 
@@ -100,14 +143,16 @@
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>42</span>
                         </button>
 
                         <div class="suggestion_content">
                             <a href="#" class="suggestion_title">Ability to follow others</a>
-                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.</p>
+                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.
+                            </p>
                             <div class="tag">Feature</div>
                         </div>
 
@@ -120,14 +165,16 @@
                     <li class="suggestion">
                         <button class="suggestion__button">
                             <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote" alt="Suggestion upvote icon">
+                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
+                                    alt="Arrow up icon">
                             </span>
                             <span>42</span>
                         </button>
 
                         <div class="suggestion_content">
                             <a href="#" class="suggestion_title">Preview images not loading</a>
-                            <p class="suggestion_description">Challenge preview images are missing when you apply a filter.</p>
+                            <p class="suggestion_description">Challenge preview images are missing when you apply a
+                                filter.</p>
                             <div class="tag">Bug</div>
                         </div>
 
@@ -143,5 +190,3 @@
 </body>
 
 </html>
-
-<!-- НА КЛАС board повішати display: flex і додати брейкпоінт від таблетів і менше (desktop-first дизайн) для зміни основної осі (flex-direction:column) -->

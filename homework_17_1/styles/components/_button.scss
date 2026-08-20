@@ -1,0 +1,27 @@
+@use "../abstract/variables" as v;
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: v.$font-weight-bold;
+    font-size: 14px;
+    color: v.$color-white;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--purple {
+        background-color: v.$color-purple;
+    }
+
+    &--blue {
+        background-color: v.$color-blue;
+    }
+}

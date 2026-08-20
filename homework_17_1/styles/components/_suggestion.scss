@@ -1,0 +1,75 @@
+@use "../abstract/variables" as v;
+
+.suggestion {
+    background-color: v.$color-white;
+    border-radius: 10px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: transform 0.2s ease;
+
+    &__upvote-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 40px;
+        height: 53px;
+        background-color: v.$color-light-blue-1;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #cfd7ff;
+        }
+    }
+
+    &__upvote-count {
+        font-size: 13px;
+        font-weight: v.$font-weight-bold;
+        color: v.$color-dark-slate;
+        letter-spacing: -0.18px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: v.$font-weight-bold;
+        color: v.$color-dark-slate;
+        margin-bottom: 4px;
+        letter-spacing: -0.25px;
+        transition: color 0.2s;
+
+        &:hover {
+            color: v.$color-blue;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        color: v.$color-muted-blue;
+        margin-bottom: 12px;
+    }
+
+    &__comments {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: v.$font-weight-bold;
+        font-size: 16px;
+        color: v.$color-dark-slate;
+
+        &--empty {
+            opacity: 0.5;
+        }
+    }
+}

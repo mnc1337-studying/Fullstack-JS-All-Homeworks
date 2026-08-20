@@ -1,0 +1,7 @@
+@use "../abstract/variables" as v;
+
+.board {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}

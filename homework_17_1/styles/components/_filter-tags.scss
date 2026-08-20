@@ -1,0 +1,13 @@
+@use "../abstract/variables" as v;
+
+.filter-tags {
+    background-color: v.$color-white;
+    padding: 24px;
+    border-radius: 10px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 8px;
+    }
+}
