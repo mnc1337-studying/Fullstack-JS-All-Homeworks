@@ -1,36 +1,46 @@
 @use "../abstract/variables" as variables;
 @use "../abstract/mixins" as mixins;
 
+
 .sidebar {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
     position: relative;
 
-    &__checkbox {
-        display: none;
+    @include mixins.media-respond-to("tablet") {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
-    &__checkbox:checked {
-        ~.sidebar__header .sidebar__toggle-icon {
-            background-image: url("../assets/icons/icon-close.svg");
-            width: 18px;
-            height: 17px;
-        }
+    @include mixins.media-respond-to("mobile") {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 
-        ~.sidebar__content {
-            transform: translateX(0);
-        }
+    &__checkbox {
+        display: none;
 
-        ~.sidebar__overlay {
-            opacity: 1;
-            pointer-events: auto;
+        @include mixins.media-respond-to("mobile") {
+            &:checked {
+                ~.sidebar__header .sidebar__toggle-icon {
+                    background-image: url("../assets/icons/icon-close.svg");
+                }
+
+                ~.sidebar__content {
+                    transform: translateX(0);
+                }
+
+                ~.sidebar__overlay {
+                    opacity: 1;
+                }
+            }
         }
     }
 
     &__header {
         height: 137px;
-        background-image: url("../assets/images/backgrounds/background-header-desktop.png");
+        background: linear-gradient(110deg, variables.$color-sky-blue 0%, #8b3ff0 35%, variables.$color-purple 55%, #e13aa5 75%, variables.$color-orange 100%);
         background-size: cover;
         border-radius: 10px;
         padding: 24px;
@@ -41,19 +51,21 @@
 
         @include mixins.media-respond-to("tablet") {
             height: auto;
-            background-image: url("../assets/images/backgrounds/background-header-tablet.png");
         }
 
         @include mixins.media-respond-to("mobile") {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
             height: 72px;
             border-radius: 0;
             padding: 0 24px;
-            background-image: url("../assets/images/backgrounds/background-header-mobile.png");
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            position: relative;
-            z-index: 1;
+            z-index: 3;
         }
     }
 
@@ -103,7 +115,17 @@
         flex-direction: column;
         gap: 24px;
 
+        @include mixins.media-respond-to("tablet") {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: span 2;
+            gap: 10px;
+        }
+
         @include mixins.media-respond-to("mobile") {
+            display: flex;
+            flex-direction: column;
+
             position: fixed;
             top: 72px;
             right: 0;
@@ -114,8 +136,10 @@
             box-sizing: border-box;
             transform: translateX(100%);
             transition: transform 0.3s ease-in-out;
-            z-index: 1000;
+            z-index: 2;
             overflow-y: auto;
+            flex-direction: column;
+            gap: 24px;
         }
     }
 
@@ -133,21 +157,7 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s ease;
-            z-index: 999;
+            z-index: 1;
         }
-    }
-
-    @include mixins.media-respond-to("tablet") {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-
-        &__content {
-            display: contents;
-        }
-    }
-
-    @include mixins.media-respond-to("mobile") {
-        grid-template-columns: 1fr;
-        gap: 0;
     }
 }

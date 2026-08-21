@@ -1,12 +1,13 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+
 
 .tag {
     display: inline-block;
     padding: 6px 16px;
-    background-color: v.$color-light-blue-1;
-    color: v.$color-blue;
+    background-color: variables.$color-light-blue-1;
+    color: variables.$color-blue;
     font-size: 13px;
-    font-weight: v.$font-weight-semibold;
+    font-weight: variables.$font-weight-semibold;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
@@ -16,11 +17,11 @@
     }
 
     &--active {
-        background-color: v.$color-blue;
-        color: v.$color-white;
+        background-color: variables.$color-blue;
+        color: variables.$color-white;
 
         &:hover {
-            background-color: v.$color-blue;
+            background-color: variables.$color-blue;
         }
     }                   
 }

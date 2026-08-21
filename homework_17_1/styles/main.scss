@@ -1,19 +1,19 @@
-@use "abstract/variables" as v;
-@use "abstract/mixins" as m;
+@use "abstract/variables" as variables;
+@use "abstract/mixins" as mixins;
 
 @use "base/reset";
 @use "base/fonts";
 
+@use "layout/board";
+@use "layout/container";
+@use "layout/main";
+
 @use "components/button";
 @use "components/filter-tags";
 @use "components/roadmap";
+@use "components/sidebar";
 @use "components/sort-menu";
 @use "components/suggestion";
+@use "components/suggestions";
 @use "components/tag";
 @use "components/toolbar";
-
-@use "layout/board";
-@use "layout/container";
-@use "layout/sidebar";
-@use "layout/main";
-@use "layout/suggestions";

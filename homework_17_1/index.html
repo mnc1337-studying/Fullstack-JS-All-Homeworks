@@ -18,11 +18,11 @@
 
                 <div class="sidebar__header">
                     <div class="sidebar__brand">
-                        <h1 class="sidebar__title">Frontend Mentor</h1>
+                        <h2 class="sidebar__title">Frontend Mentor</h2>
                         <p class="sidebar__subtitle">Feedback Board</p>
                     </div>
 
-                    <label for="mobile-menu-toggle" class="sidebar__toggle" aria-label="Toggle menu">
+                    <label for="mobile-menu-toggle" class="sidebar__toggle">
                         <span class="sidebar__toggle-icon"></span>
                     </label>
                 </div>
@@ -43,7 +43,7 @@
 
                     <div class="roadmap">
                         <div class="roadmap__header">
-                            <h3 class="roadmap__title">Roadmap</h3>
+                            <h2 class="roadmap__title">Roadmap</h2>
                             <a href="#" class="roadmap__link">View</a>
                         </div>
                         <ul class="roadmap__list">
@@ -71,14 +71,12 @@
                         <h2 class="toolbar__title">6 Suggestions</h2>
                     </div>
 
-                    <div class="toolbar__sort">
-                        <input type="checkbox" id="sort-toggle" class="toolbar__sort-checkbox">
-
-                        <label for="sort-toggle" class="toolbar__sort-button">
+                    <details class="toolbar__sort">
+                        <summary class="toolbar__sort-button">
                             <span class="toolbar__sort-label">Sort by :</span>
                             <span class="toolbar__sort-value">Most Upvotes</span>
                             <span class="toolbar__sort-arrow"></span>
-                        </label>
+                        </summary>
 
                         <ul class="sort-menu">
                             <li class="sort-menu__item sort-menu__item--selected">
@@ -89,7 +87,7 @@
                             <li class="sort-menu__item">Most Comments</li>
                             <li class="sort-menu__item">Least Comments</li>
                         </ul>
-                    </div>
+                    </details>
 
                     <button class="button button--purple toolbar__button">
                         <span>+ Add Feedback</span>

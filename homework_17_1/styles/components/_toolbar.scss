@@ -1,6 +1,7 @@
 @use "../abstract/variables" as variables;
 @use "../abstract/mixins" as mixins;
 
+
 .toolbar {
     background-color: variables.$color-dark-blue;
     border-radius: 10px;
@@ -8,6 +9,12 @@
     display: flex;
     align-items: center;
     color: variables.$color-white;
+
+    @include mixins.media-respond-to("mobile") {
+        border-radius: 0;
+        width: 100%;
+        padding: 8px 24px;
+    }
 
     &__logo {
         display: flex;
@@ -28,17 +35,21 @@
     &__sort {
         position: relative;
         display: inline-block;
-    }
 
-    &__sort-checkbox {
-        display: none;
+        &>summary::-webkit-details-marker {
+            display: none;
+        }
 
-        &:checked {
-            ~ .sort-menu {
+        &>summary {
+            list-style: none;
+        }
+
+        &[open] {
+            .sort-menu {
                 display: flex;
             }
 
-            ~ .toolbar__sort-button .toolbar__sort-arrow {
+            .toolbar__sort-arrow {
                 transform: rotate(180deg);
             }
         }
@@ -50,7 +61,6 @@
         gap: 6px;
         cursor: pointer;
         font-size: 14px;
-        user-select: none;
 
         &:hover {
             opacity: 0.75;

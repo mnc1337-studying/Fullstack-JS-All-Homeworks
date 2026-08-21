@@ -1,6 +1,7 @@
 @use "../abstract/variables" as variables;
 @use "../abstract/mixins" as mixins;
 
+
 .board {
     display: grid;
     grid-template-columns: 255px 1fr;
@@ -10,5 +11,9 @@
     @include mixins.media-respond-to ("tablet") {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    @include mixins.media-respond-to ("mobile") {
+        margin-top: -24px;
     }
 }

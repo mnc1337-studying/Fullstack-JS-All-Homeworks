@@ -1,15 +1,16 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+
 
 .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    padding: 12px 24px;
+    padding: 10px 16px;
     border-radius: 10px;
-    font-weight: v.$font-weight-bold;
-    font-size: 14px;
-    color: v.$color-white;
+    font-weight: variables.$font-weight-bold;
+    font-size: 13px;
+    color: variables.$color-white;
     cursor: pointer;
     transition: opacity 0.2s ease;
 
@@ -18,10 +19,10 @@
     }
 
     &--purple {
-        background-color: v.$color-purple;
+        background-color: variables.$color-purple;
     }
 
     &--blue {
-        background-color: v.$color-blue;
+        background-color: variables.$color-blue;
     }
 }

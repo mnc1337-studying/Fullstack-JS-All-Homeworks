@@ -1,6 +1,7 @@
 @use "../abstract/variables" as variables;
 @use "../abstract/mixins" as mixins;
 
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -8,5 +9,9 @@
 
     @include mixins.media-respond-to("tablet") {
         padding: 56px 24px;
+    }
+    
+    @include mixins.media-respond-to("mobile") {
+        padding: 56px 0px;
     }
 }

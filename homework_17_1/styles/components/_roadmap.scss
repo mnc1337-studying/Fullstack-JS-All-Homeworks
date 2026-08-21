@@ -1,7 +1,8 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+
 
 .roadmap {
-    background-color: v.$color-white;
+    background-color: variables.$color-white;
     padding: 24px;
     border-radius: 10px;
 
@@ -14,18 +15,18 @@
 
     &__title {
         font-size: 18px;
-        color: v.$color-dark-slate;
-        font-weight: v.$font-weight-bold;
+        color: variables.$color-dark-slate;
+        font-weight: variables.$font-weight-bold;
     }
 
     &__link {
         font-size: 13px;
-        font-weight: v.$font-weight-semibold;
-        color: v.$color-blue;
+        font-weight: variables.$font-weight-semibold;
+        color: variables.$color-blue;
         text-decoration: underline;
 
         &:hover {
-            color: #8397ab;
+            color: variables.$color-muted-blue;
         }
     }
 
@@ -40,7 +41,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 16px;
-        color: v.$color-muted-blue;
+        color: variables.$color-muted-blue;
 
         &::before {
             content: "";
@@ -52,15 +53,15 @@
         }
 
         &--planned::before {
-            background-color: v.$color-orange;
+            background-color: variables.$color-orange;
         }
 
         &--in-progress::before {
-            background-color: v.$color-purple;
+            background-color: variables.$color-purple;
         }
 
         &--live::before {
-            background-color: v.$color-sky-blue;
+            background-color: variables.$color-sky-blue;
         }
     }
 
@@ -69,7 +70,7 @@
     }
 
     &__count {
-        font-weight: v.$font-weight-bold;
-        color: v.$color-muted-blue;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-muted-blue;
     }
 }

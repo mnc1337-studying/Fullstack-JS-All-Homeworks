@@ -1,75 +1,114 @@
-@use "../abstract/variables" as v;
+@use "../abstract/variables" as variables;
+@use "../abstract/mixins" as mixins;
+
 
 .suggestion {
-    background-color: v.$color-white;
+    background-color: variables.$color-white;
     border-radius: 10px;
     padding: 28px 32px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "upvote content comments";
     align-items: center;
     gap: 40px;
-    transition: transform 0.2s ease;
+
+    @include mixins.media-respond-to("mobile") {
+        padding: 24px;
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "content content"
+            "upvote comments";
+    }
 
     &__upvote-btn {
+        grid-area: upvote;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 8px;
-        width: 40px;
-        height: 53px;
-        background-color: v.$color-light-blue-1;
+        background-color: variables.$color-light-blue-1;
+        border: none;
         border-radius: 10px;
+        padding: 14px 11px;
+        width: 40px;
+        box-sizing: border-box;
         cursor: pointer;
-        transition: background-color 0.2s;
+        transition: background-color 0.2s ease;
 
         &:hover {
-            background-color: #cfd7ff;
+            background-color: #CFD7FF;
+        }
+
+        @include mixins.media-respond-to("mobile") {
+            width: auto;
+            justify-self: start;
+            flex-direction: row;
+            padding: 6px 16px;
+            height: 40px;
         }
     }
 
     &__upvote-count {
         font-size: 13px;
-        font-weight: v.$font-weight-bold;
-        color: v.$color-dark-slate;
-        letter-spacing: -0.18px;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-dark-slate;
     }
 
     &__content {
+        grid-area: content;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        flex-grow: 1;
     }
 
     &__title {
         font-size: 18px;
-        font-weight: v.$font-weight-bold;
-        color: v.$color-dark-slate;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-dark-slate;
+        text-decoration: none;
         margin-bottom: 4px;
-        letter-spacing: -0.25px;
-        transition: color 0.2s;
+        transition: color 0.2s ease;
 
         &:hover {
-            color: v.$color-blue;
+            color: variables.$color-blue;
+        }
+
+        @include mixins.media-respond-to("mobile") {
+            font-size: 13px;
         }
     }
 
     &__description {
         font-size: 16px;
-        color: v.$color-muted-blue;
-        margin-bottom: 12px;
+        font-weight: variables.$font-weight-regular;
+        color: variables.$color-muted-blue;
+        margin: 0 0 12px 0;
+
+        @include mixins.media-respond-to("mobile") {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
     }
 
     &__comments {
+        grid-area: comments;
+        justify-self: end;
         display: flex;
         align-items: center;
         gap: 8px;
-        font-weight: v.$font-weight-bold;
+        text-decoration: none;
         font-size: 16px;
-        color: v.$color-dark-slate;
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-dark-slate;
 
         &--empty {
             opacity: 0.5;
+        }
+
+        @include mixins.media-respond-to("mobile") {
+            font-size: 13px;
         }
     }
 }

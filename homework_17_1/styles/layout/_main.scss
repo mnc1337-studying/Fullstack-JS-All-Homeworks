@@ -1,5 +1,12 @@
+@use "../abstract/mixins" as mixins;
+
+
 .main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
+
+    @include mixins.media-respond-to ("mobile") {
+        gap: 32px;
+    }
 }

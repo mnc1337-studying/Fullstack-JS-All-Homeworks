@@ -1,15 +1,15 @@
 @use "sass:map";
 @use "./variables" as variables;
 
+
 @mixin media-respond-to($breakpoint) {
     $breakpoint-value: map.get(variables.$breakpoints, $breakpoint);
-    @debug "Breakpoint '#{$breakpoint}' value is: #{$breakpoint-value}";
     @if $breakpoint-value {
         @media (max-width: $breakpoint-value) {
             @content;
         }
     }
     @else {
-        @error "This breakpoint does not exist in breakpoints mapping!"
+        @error "This breakpoint does not exist in breakpoints mapping!";
     }
 }

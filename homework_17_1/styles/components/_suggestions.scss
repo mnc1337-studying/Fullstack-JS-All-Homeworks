@@ -1,12 +1,21 @@
 @use "../abstract/variables" as variables;
 @use "../abstract/mixins" as mixins;
 
+
 .suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     @include mixins.media-respond-to("tablet") {
         gap: 16px;
+    }
+
+    @include mixins.media-respond-to("mobile") {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
