@@ -4,181 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Feedback App</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
-        <h1 hidden></h1>
+        <h1 hidden>Product Feedback App</h1>
         <div class="board">
             <aside class="sidebar">
-                <div class="sidebar_header">
+                <input type="checkbox" id="mobile-menu-toggle" class="sidebar__checkbox">
 
+                <div class="sidebar__header">
+                    <div class="sidebar__brand">
+                        <h2 class="sidebar__title">Frontend Mentor</h2>
+                        <p class="sidebar__subtitle">Feedback Board</p>
+                    </div>
+
+                    <label for="mobile-menu-toggle" class="sidebar__toggle">
+                        <span class="sidebar__toggle-icon"></span>
+                    </label>
                 </div>
-                <nav>
-                    <ul>
-                        <li><button></button></li>
-                        <li><button></button></li>
-                        <li><button></button></li>
-                        <li><button></button></li>
-                        <li><button></button></li>
-                        <li><button></button></li>
-                    </ul>
-                </nav>
-                <div class="roadmap">
 
+                <div class="sidebar__overlay"></div>
+
+                <div class="sidebar__content">
+                    <nav class="filter-tags">
+                        <ul class="filter-tags__list">
+                            <li><button class="tag tag--active">All</button></li>
+                            <li><button class="tag">UI</button></li>
+                            <li><button class="tag">UX</button></li>
+                            <li><button class="tag">Enhancement</button></li>
+                            <li><button class="tag">Bug</button></li>
+                            <li><button class="tag">Feature</button></li>
+                        </ul>
+                    </nav>
+
+                    <div class="roadmap">
+                        <div class="roadmap__header">
+                            <h2 class="roadmap__title">Roadmap</h2>
+                            <a href="#" class="roadmap__link">View</a>
+                        </div>
+                        <ul class="roadmap__list">
+                            <li class="roadmap__item roadmap__item--planned">
+                                <span class="roadmap__status">Planned</span>
+                                <span class="roadmap__count">2</span>
+                            </li>
+                            <li class="roadmap__item roadmap__item--in-progress">
+                                <span class="roadmap__status">In-Progress</span>
+                                <span class="roadmap__count">3</span>
+                            </li>
+                            <li class="roadmap__item roadmap__item--live">
+                                <span class="roadmap__status">Live</span>
+                                <span class="roadmap__count">1</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </aside>
+
             <main class="main">
                 <div class="toolbar">
                     <div class="toolbar__logo">
-                        <img src="./assets/icons/icon-suggestions.svg" alt="Suggestions icon">
-                        <h2></h2>
+                        <img src="./assets/icons/icon-suggestions.svg" alt="Suggestions icon" class="toolbar__icon">
+                        <h2 class="toolbar__title">6 Suggestions</h2>
                     </div>
 
-                    <div class="toolbar_sort">
-                        <button>
-                            <p>Sort by: </p>
-                            <span>Most Upvotes</span>
-                            <img src="./assets/icons/icon-arrow-up.svg" alt="Arrow up icon">
-                        </button>
-                    </div>
+                    <details class="toolbar__sort">
+                        <summary class="toolbar__sort-button">
+                            <span class="toolbar__sort-label">Sort by :</span>
+                            <span class="toolbar__sort-value">Most Upvotes</span>
+                            <span class="toolbar__sort-arrow"></span>
+                        </summary>
 
-                    <button class="toolbar__feedback">
-                        <span>+</span>
-                        <span>Add feedback</span>
+                        <ul class="sort-menu">
+                            <li class="sort-menu__item sort-menu__item--selected">
+                                Most Upvotes
+                                <img src="./assets/icons/icon-check.svg" alt="Check icon" class="sort-menu__check">
+                            </li>
+                            <li class="sort-menu__item">Least Upvotes</li>
+                            <li class="sort-menu__item">Most Comments</li>
+                            <li class="sort-menu__item">Least Comments</li>
+                        </ul>
+                    </details>
+
+                    <button class="button button--purple toolbar__button">
+                        <span>+ Add Feedback</span>
                     </button>
                 </div>
 
                 <ul class="suggestions">
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>112</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">112</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Add tags for solutions</a>
-                            <p class="suggestion_description">Easier to search for solutions based on a specific stack.
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Add tags for solutions</a>
+                            <p class="suggestion__description">Easier to search for solutions based on a specific stack.
                             </p>
-                            <div class="tag">Enhancement</div>
+                            <span class="tag">Enhancement</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>2</span>
                         </a>
                     </li>
 
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>99</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">99</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Add a dark theme option</a>
-                            <p class="suggestion_description">It would help people with light sensitivities and who
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Add a dark theme option</a>
+                            <p class="suggestion__description">It would help people with light sensitivities and who
                                 prefer dark mode.</p>
-                            <div class="tag">Feature</div>
+                            <span class="tag">Feature</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>4</span>
                         </a>
                     </li>
 
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>65</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">65</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Q&A within the challenge hubs</a>
-                            <p class="suggestion_description">Challenge-specific Q&A would make for easy reference.</p>
-                            <div class="tag">Feature</div>
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Q&A within the challenge hubs</a>
+                            <p class="suggestion__description">Challenge-specific Q&A would make for easy reference.</p>
+                            <span class="tag">Feature</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>1</span>
                         </a>
                     </li>
 
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>52</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">51</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Allow image/video upload</a>
-                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Allow image/video upload to feedback</a>
+                            <p class="suggestion__description">Images and screencasts can enhance comments on solutions.
                             </p>
-                            <div class="tag">Enhancement</div>
+                            <span class="tag">Enhancement</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>2</span>
                         </a>
                     </li>
 
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>42</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">42</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Ability to follow others</a>
-                            <p class="suggestion_description">Images and screencasts can enhance comments on solutions.
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Ability to follow others</a>
+                            <p class="suggestion__description">Stay updated on comments and solutions other people post.
                             </p>
-                            <div class="tag">Feature</div>
+                            <span class="tag">Feature</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>3</span>
                         </a>
                     </li>
 
                     <li class="suggestion">
-                        <button class="suggestion__button">
-                            <span>
-                                <img src="./assets/icons/icon-arrow-up.svg" class="suggestion__upvote"
-                                    alt="Arrow up icon">
-                            </span>
-                            <span>42</span>
+                        <button class="suggestion__upvote-btn">
+                            <img src="./assets/icons/icon-arrow-up.svg" alt="Upvote icon">
+                            <span class="suggestion__upvote-count">3</span>
                         </button>
-
-                        <div class="suggestion_content">
-                            <a href="#" class="suggestion_title">Preview images not loading</a>
-                            <p class="suggestion_description">Challenge preview images are missing when you apply a
+                        <div class="suggestion__content">
+                            <a href="#" class="suggestion__title">Preview images not loading</a>
+                            <p class="suggestion__description">Challenge preview images are missing when you apply a
                                 filter.</p>
-                            <div class="tag">Bug</div>
+                            <span class="tag">Bug</span>
                         </div>
-
-                        <a href="#" class="suggestion_comment">
+                        <a href="#" class="suggestion__comments suggestion__comments--empty">
                             <img src="./assets/icons/icon-comments.svg" alt="Comments icon">
                             <span>0</span>
                         </a>
