@@ -155,7 +155,7 @@ const productsTask10 = [
 
 
 const findProductNotInStock = (products) => {
-    for (const product of productsTask10) {
+    for (const product of products) {
         if (product.inStock === false) {
             return product.name;
         }
@@ -257,10 +257,5 @@ const usersTask17 = [
     { id: 2, name: 'Богдан', age: 17 },
 ];
 
-const usersNames = [];
-
-for (const user of usersTask17) {
-    usersNames.push(user.name);
-}
-
+const usersNames = usersTask17.map(user => user.name);
 console.log(usersNames);
