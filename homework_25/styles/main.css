@@ -1,0 +1,15 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__image {
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
