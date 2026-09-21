@@ -7,4 +7,5 @@ const products = [
     { id: 6, title: 'Килимок для миші XXL', category: 'mice', price: 599, discount: null, inStock: true, rating: 3.9, image: null, tags: ['xxl'] },
 ];
 
+
 export {products};
