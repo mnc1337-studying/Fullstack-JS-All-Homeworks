@@ -1,0 +1,19 @@
+#myButton {
+    background: transparent;
+    padding: 7px;
+    border: 1px dashed blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#myButton:hover {
+    color: blue;
+}
+
+#testList li {
+    cursor: pointer;
+}
+
+#testList li:hover {
+    color: green;
+}
