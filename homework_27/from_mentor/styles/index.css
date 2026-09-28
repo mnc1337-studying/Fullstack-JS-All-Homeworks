@@ -1,0 +1,12 @@
+.todo-list li, .todo-list li button {
+    cursor: pointer;
+}
+
+.todo-list li[data-done="true"] {
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+.todo-list li button {
+    margin-left: 8px;
+}
