@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary__title {
+    color: darkgreen;
+}
+
+.summary__table,
+.summary__table th,
+.summary__table td {
+    padding: 3px;
+    border: 1px dashed blue;
+}
+
+.summary__error {
+    color: darkred;
+    font-size: 30px;
+    margin-top: 50px;
+}
