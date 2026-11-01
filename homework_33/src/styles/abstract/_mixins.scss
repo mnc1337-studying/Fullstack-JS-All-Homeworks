@@ -1,0 +1,11 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin respond($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

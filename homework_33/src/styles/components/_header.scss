@@ -1,0 +1,13 @@
+@use "../abstract/mixins" as m;
+@use "../base/variables" as v;
+
+.header {
+    @include m.flex-center;
+    padding: 30px;
+    background: v.$color-primary;
+    color: #fff;
+
+    &__title {
+        font-size: 1.5rem;
+    }
+}

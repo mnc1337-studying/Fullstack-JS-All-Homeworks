@@ -1,0 +1,13 @@
+@use "../abstract/mixins" as m;
+@use "../base/variables" as v;
+
+.cards {
+    display: grid;
+    gap: 16px;
+    padding: 24px;
+    grid-template-columns: 1fr;
+
+    @include m.respond(v.$breakpoint-md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
