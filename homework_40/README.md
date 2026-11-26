@@ -15,7 +15,7 @@ Three small React (+ Vite) projects that demonstrate the `useState` hook.
 For each project separately (`folder-name` is a name of current project directory):
 
 ```bash
-cd `folder-name`
+cd folder-name
 npm install
 npm run dev
 ```
